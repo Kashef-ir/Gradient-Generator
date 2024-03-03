@@ -107,4 +107,9 @@ body {
   position: relative;
   left: 85%;
   bottom: 10px;  
+  transition: all ease-in-out 0.2s;
+}
+
+#copyBtn:hover {
+  background-color: #163ec1;
 }
