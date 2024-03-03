@@ -14,24 +14,24 @@
                 <input type="color" id="color2" value="#1a237e" />
             </div>
             <div class="buttons">
-                <button id="upBtn"><i class="fas fa-arrow-up"></i></button>
-                <button id="downBtn" class="active">
+                <button id="upBtn" onclick="setDirection('to top', this)"><i class="fas fa-arrow-up"></i></button>
+                <button id="downBtn" class="active" onclick="setDirection('to bottom', this)">
                     <i class="fas fa-arrow-down"></i>
                 </button>
-                <button id="rightBtn">
+                <button id="rightBtn" onclick="setDirection('to right', this)">
                     <i class="fas fa-arrow-right"></i>
                 </button>
-                <button id="leftBtn"><i class="fas fa-arrow-left"></i></button>
-                <button id="topRightBtn">
+                <button id="leftBtn" onclick="setDirection('to left', this)"><i class="fas fa-arrow-left"></i></button>
+                <button id="topRightBtn" onclick="setDirection('to top right', this)">
                     <i class="fas fa-arrow-up rotate-icon"></i>
                 </button>
-                <button id="topLeftBtn">
+                <button id="topLeftBtn" onclick="setDirection('to top left', this)">
                     <i class="fas fa-arrow-left rotate-icon"></i>
                 </button>
-                <button id="downRightBtn">
+                <button id="downRightBtn" onclick="setDirection('to bottom right', this)">
                     <i class="fas fa-arrow-right rotate-icon"></i>
                 </button>
-                <button id="downLeftBtn">
+                <button id="downLeftBtn" onclick="setDirection('to bottom left', this)">
                     <i class="fas fa-arrow-down rotate-icon"></i>
                 </button>
             </div>
