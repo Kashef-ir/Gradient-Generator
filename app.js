@@ -4,6 +4,7 @@ const color2 = document.querySelector("#color2");
 let currentDirection = "to bottom";
 const outputCode = document.querySelector("#code");
 const generateBtn = document.querySelector("#submit");
+const copyBtn = document.querySelector('#copyBtn')
 
 // functions
 function setDirection(value, _this) {
@@ -35,6 +36,12 @@ function generateCode() {
         ")";
 }
 
+function copyCode() {
+    outputCode.select()
+    document.execCommand('copy')
+} 
+
 generateCode();
 // event listeners
 generateBtn.addEventListener("click", generateCode);
+copyBtn.addEventListener('click', copyCode)
