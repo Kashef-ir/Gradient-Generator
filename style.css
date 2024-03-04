@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12px);
@@ -54,12 +54,19 @@ body {
 }
 
 .buttons button {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   background-color: transparent;
-  border: 3px solid #d5d5dc;
+  border: 1px solid #d5d5dc;
   border-radius: 5px;
   cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.buttons button:hover {
+  border: none;
+  background-color: #B89007;
+  filter: invert(100%);
 }
 
 .rotate-icon {
@@ -68,8 +75,8 @@ body {
 
 .buttons .active {
   border: none;
-  background-color: #4a6ee0;
-  color: #fff;
+  background-color: #B89007;
+  filter: invert(100%);
 }
 
 #submit {
@@ -98,14 +105,15 @@ body {
   color: #30304a;
   padding: 10px 20px;
   background-color: transparent;
+  font-size: 12px;
 }
 
 #copyBtn {
-  font-size: 14px;
+  font-size: 10px;
   background-color: #4a6ee0;
   color: #fff;
   border-radius: 3px;
-  padding: 5px;
+  padding: 7px 10px;
   cursor: pointer;
   position: relative;
   left: 85%;
@@ -115,4 +123,8 @@ body {
 
 #copyBtn:hover {
   background-color: #163ec1;
+}
+
+.icons {
+  width: 10px;
 }
